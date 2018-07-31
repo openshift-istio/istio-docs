@@ -12,7 +12,7 @@ The OpenShift Service mesh documentation is written in [Asciidoc](http://asciido
 * Upstream (community) - [Hugo](https://gohugo.io/)  
 * Downstream (product) - [ccutils](https://pantheon.cee.redhat.com/#/help/ccutil)
 * Both - [Asciidoctor](http://asciidoctor.org/docs/install-toolchain/) The downstream (product) documentation toolset requires asciidoc, and while the main content format for Hugo is markdown, Hugo also [supports asciidoc files](https://gohugo.io/content-management/formats/#additional-formats-through-external-helpers) by calling Asciidoctor.
-* Text editor of your choice, for example the [Atom](https://atom.io/) has several useful [packages](https://atom.io/packages) that make it easier to work with asciidoc and Hugo.
+* Text editor of your choice, for example the [Atom](https://atom.io/) text editor has several useful [packages](https://atom.io/packages) that make it easier to work with asciidoc and Hugo.
 
 ## Repository Structure
 Hugo assumes that the same structure that organizes your source content is used to organize the rendered site. 
@@ -20,10 +20,10 @@ Hugo assumes that the same structure that organizes your source content is used 
 
 This repository uses the following directory structure:
 ```
-├── [archetypes] - Can be used to define content, for example you can set default tags or categories and define types such as a post, tutorial or product here.
+├── [archetypes] - Can be used to define content, for example you can set default tags or categories and define types such as a post, tutorial or product here.  
 ├── [content] - Contains all the content files.
 │   │   ├── .adoc (AsciiDoc topic files)
-│   ├── Subfolders -     
+│   ├── Subfolders     
 │   │   ├── .adoc (AsciiDoc topic files)
 │   ├── DRAFTS - This directory is intended for topic stubs, topics that need to be written, and in-progress drafts. The Hugo config file is set to ignore this directory and its contents.  
 │   │   ├── .adoc (AsciiDoc topic files)
@@ -46,7 +46,7 @@ This repository uses the following directory structure:
 ├── [static] - Any static files here will be compiled into the final website.
 |   ├──  img - This directory contains all the images.  Hugo expects this directory name.
 │   │  ├── .png
-├── [themes] - This directory contains the theme for the site. (NOTE: When you first generate a Hugo site the themes folder is EMPTY.)
+├── [themes] - This directory contains the theme for the site. (NOTE: Folder is EMPTY until you select a theme.)
 ├── config.toml - Main Hugo configuration file, used to define the websites title, language, URLs etc.
 ├── README.md (This file)
 ```
@@ -57,7 +57,7 @@ The documentation is written in asciidoc.  You can create new files from the com
 
 To create a new file from the command line:
 ```
-$ hugo new <DOCS-SECTION>/<new-content-lowercase>.adoc.
+$ hugo new <section-name>/<new-content-lowercase>.adoc.
 ```
 For example
 ```
@@ -90,7 +90,7 @@ For more information about writing modular documentation, see the [Modular Docum
 
 ### To Build the Upstream Docs Web Site
 
-The Upstream docs use Hugo to generate the files for the web site.  
+The upstream docs use Hugo to generate the files for the web site.  
 
 #### Starting the Hugo Server
 Hugo provides its own webserver which builds and serves the site.  By default Hugo will also watch your files for any changes you make and automatically rebuild the site. It will then live reload any open browser pages and push the latest content to them.
@@ -109,7 +109,6 @@ $ hugo server --watch
 ```
 To shut down the local server, use `CTRL + C`.
 
-Create site output
 When your site is ready to ship, you can shut down your preview server and issue a command to build the actual pages of the site. In Hugo, that would be just `hugo`. Hugo puts the completed site in the `public` directory.
 
 To generate the site output files:
@@ -117,40 +116,31 @@ To generate the site output files:
 $ hugo
 ```
 
-To view the generated Hugo files, nagivate to the following directory:
+To view the generated Hugo files, nagivate to the following directory:  `public/index.html`
 
-public/index.html
-
-
-For more information about Hugo commands, see the [Hugo Web site](https://gohugo.io/getting-started/usage/)
+For more information about Hugo commands, see the [Hugo Web site](https://gohugo.io/getting-started/usage/).
 
 ### To Build the Downstream Docs
 
-The Downstream docs use `ccutil` to generate the docs as part of the docs to Drupal toolchain.
+The downstream docs use `ccutil` to generate the docs as part of the Docs-to-Drupal toolchain.
 
 To build all of the books, open a terminal, navigate to the root directory of this repository, and type the following command (you may need to run it as `sudo`):
 ```
 $ scripts/buildGuides.sh   
 ```
-The script provides links to both AsciiDoctor and ccutil builds for each of the example books.
+The script provides links to both asciidoctor and ccutil builds for each of the example books.
 
 You can also build a single guide. Navigate to the folder of the manual you want to build and type the following command (you may need to run it as `sudo`):
 ```
 $ ./buildGuide.sh
 ```
 
-To view the generated output, nagivate to the following directory for a particular manual:
-
-<title>/build/tmp/en-US/html-single/index.html
+To view the generated output, nagivate to the following directory for a particular manual:`<title>/build/tmp/en-US/html-single/index.html`
 
 
 ## Submitting a Pull Request
 
-
-
-
-
 You can close a GitHub issue from a Pull Request.  All you have to do is include the [special keyword syntax] (https://help.github.com/articles/closing-issues-using-keywords/) (for example, “fixes #5) in the body of your Pull Request.  When the pull request is merged into your repository's default branch, the corresponding issue is automatically closed.
 
-Commit messages against Jira should start with the project name associated with the PR. If the PR is to address MAISTRA-123 then the commit message for the PR must start with "MAISTRA-123 " and then followed by the detailed commit message (no semi-column, dash between JIRA ID and text, no brackets... just a space).
+Commit messages against Jira should start with the project name associated with the PR. If the PR is to address MAISTRA-123 then the commit message for the PR must start with "MAISTRA-123 " and then followed by the detailed commit message (no semi-column or dash between the Jira ID and text, no brackets... just a space).
 
