@@ -1,15 +1,15 @@
-= User Journey - Installing Istio + Fabric8 Launcher
+= User Journey - Installing OpenShift Service Mesh + Fabric8 Launcher
 
-This document describes how to use the Istio installer to install the following components:
+Red Hat OpenShift Service Mesh is based on the open source Istio project.  This document describes how to use the OpenShift Service Mesh installer to install the following components:
 
-* Istio platform to connect, manage, and secure microservices.  This Istio installation includes the following components:
+* OpenShift Service Mesh platform to connect, manage, and secure microservices.  This OpenShift Service Mesh installation includes the following components:
 ** Elasticsearch
 ** Grafana
 ** Istio
 ** Jaeger
 ** Prometheus
 * Fabric8 integrated development platform launcher.
-* Four Istio-specific sample applications (boosters) and tutorials (missions) that let you explore some of the Istio features.
+* Four Service Mesh-specific sample applications (boosters) and tutorials (missions) that let you explore some of the Istio features.
 
 == Fabric8 launcher workflows
 
@@ -19,7 +19,7 @@ There are two separate workflows that you can use with the Fabric8 development p
 * *Build and run locally workflow* -  Use this workflow if you want to download the booster application files as a zip archive and extract it to your local file system.  Note that with this workflow you have to follow the instructions in the mission README file to deploy the application.
 
 == Prerequisites
-Before you can install Istio and the Fabric8 launcher, you should already have met the following prerequisites:
+Before you can install OpenShift Service Mesh and the Fabric8 launcher, you should already have met the following prerequisites:
 
 * Fedora/CentOS OR Mac OSX OR Ubuntu with at least 6 Gb of RAM and 4 CPUs.
 * Red Hat Container Registry with the appropriate configuration (see below for configuration instructions)
