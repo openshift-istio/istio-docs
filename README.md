@@ -3,7 +3,7 @@
 
 This repository contains documentation for the MVP (developer preview) release of OpenShift Service Mesh, based on the upstream Istio project.  This README provides information about this documentation repository.
 
-Click here to read the [OpenShift Service Mesh MVP documentation](https://github.com/openshift-istio/istio-docs/blob/master/content/install_mvp.adoc) that was previously displayed at this location.  The linked document also includes information about associated sample applications (boosters) and tutorial scenarios(missions) released with the MVP.
+Click here to read the [OpenShift Service Mesh MVP documentation](https://github.com/openshift-istio/istio-docs/blob/master/content/install-mvp.adoc) that was previously displayed at this location.  The linked document also includes information about associated sample applications (boosters) and tutorial scenarios(missions) released with the MVP.
 
 ## Getting Started
 
