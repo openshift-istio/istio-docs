@@ -24,7 +24,7 @@
 // Changing the value changes the generated URL.
 //
 :DocInfoProductName: OpenShift Service Mesh
-:DocInfoProductNumber: 1.0
+:DocInfoProductNumber: 1.0.TechPreview
 //
 // Book Names:
 //     Defining the book names in document attributes instead of hard-coding them in
