@@ -13,11 +13,11 @@
 :ProductName: Red Hat OpenShift Service Mesh
 :ProductShortName: Service Mesh
 :ProductRelease: 
-:ProductVersion: 1.0
+:ProductVersion: 1.0.TechPreview
 :product-build:  
 :DownloadURL: registry.access.redhat.com
 :product-title: Installing Red Hat OpenShift Service Mesh
-:product-title_short: Product 1.0.0
+:product-title_short: 
 //
 // Documentation publishing attributes used in the master-docinfo.xml file
 // Note that the DocInfoProductName generates the URL for the product page.
