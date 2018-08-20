@@ -1,5 +1,7 @@
 = Installing OpenShift Service Mesh
-
+////
+Summit version of installation docs
+////
 In order to make it as easy as possible to preview OpenShift Service Mesh, based the Istio project, we've created a special version of the `oc` command line tool for OpenShift. When you run `oc cluster up`, that single command performs the following actions:
 
 * Creates the openshift-ansible-istio-job which runs an Ansible playbook that performs the installation.
@@ -12,7 +14,7 @@ In order to make it as easy as possible to preview OpenShift Service Mesh, based
 
 . You can https://github.com/openshift-istio/origin/releases[download the istiooc client tool created specifically for this release from GitHub] and rename it to `oc`.
 
-. Follow the https://github.com/openshift-istio/istio-docs/blob/master/content/user-journey.adoc[installation instructions] to install Istio, the Fabric8 Launcher, and the Jaeger components.
+. Follow the https://github.com/openshift-istio/istio-docs/blob/master/content/rhoar-workflow.adoc[installation instructions] to install Istio, the Fabric8 Launcher, and the Jaeger components.
 
 . Select a sample application (booster) and follow the README documentation for the tutorial (mission) for that Red Hat OpenShift Application Runtime.
 
