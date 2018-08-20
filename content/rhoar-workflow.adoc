@@ -1,5 +1,7 @@
 = User Journey - Installing OpenShift Service Mesh + Fabric8 Launcher
-
+////
+Summit version of installation docs
+////
 Red Hat OpenShift Service Mesh is based on the open source Istio project.  This document describes how to use the OpenShift Service Mesh installer to install the following components:
 
 * OpenShift Service Mesh platform to connect, manage, and secure microservices.  This OpenShift Service Mesh installation includes the following components:
