@@ -1,0 +1,11 @@
+[[prometheus_overview]]
+= Prometheus Overview
+////
+First draft
+////
+
+Prometheus is an open-source, microservice monitoring system designed for reliability. This toolkit collects metrics from applications and makes them viewable. DevOps teams can use Prometheus to view application statistics and configure alerts. The toolkit's built-in query language gives DevOps the power to view the data they need to see.
+
+Prometheus servers pull data from targets at a regular frequency and save it for a set period. The application applies rules to collected data to create time-based series or generate alerts. Prometheus users can aggregate time series data and view it in tabular or graph form.
+
+Prometheus is a standalone server application with minimal infrastructure requirements. It is independent from remote services to increase reliability. If infrastructure problems arise, DevOps teams can still rely on Prometheus for diagnostics.
